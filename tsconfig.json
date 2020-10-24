@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"paths": {"*": ["types/*"]},
+		"lib": ["dom", "esnext"],
+		"moduleResolution": "node",
+		"noEmit": true,
+		"sourceMap": true,
+		"noUnusedLocals": true,
+		"jsx": "react",
+		"module": "commonjs",
+		"target": "esnext",
+		"esModuleInterop": true,
+		"strict": true,
+		"noImplicitAny": false,
+		"strictNullChecks": false,
+		"baseUrl": "src",
+		"allowSyntheticDefaultImports": true
+	},
+	"include": ["src/**/*"],
+	"exclude": ["dist", "node_modules"]
+}
