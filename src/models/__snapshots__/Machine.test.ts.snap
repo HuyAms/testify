@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Machine should have a correct Size enum 1`] = `
+Object {
+  "_size1": "size1",
+  "_size2": "size2",
+  "_size4": "size4",
+}
+`;
