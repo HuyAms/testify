@@ -6,9 +6,10 @@ import ConfigurationForm from './ConfigurationForm'
 
 describe('ConfigurationForm', () => {
 	it('renders a size and capacity input', () => {
-		const {getByLabelText} = render(<ConfigurationForm />)
+		const {getByLabelText, getByText} = render(<ConfigurationForm />)
 		getByLabelText(/size/i)
 		getByLabelText(/capacity/i)
+		getByText(/Calculate/i)
 	})
 
 	it('size should be less than 10', () => {
