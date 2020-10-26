@@ -51,5 +51,6 @@ const ConfigurationForm = () => {
 		</Form>
 	)
 }
+export const Hello = () => <p>Hello</p>
 
 export default ConfigurationForm
