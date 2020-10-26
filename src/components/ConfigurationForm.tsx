@@ -1,5 +1,5 @@
 import React from 'react'
-import {Form, Input, Button} from 'antd'
+import {Form, Input, InputNumber, Button} from 'antd'
 
 const ConfigurationForm = () => {
 	const onFinish = values => {
@@ -38,9 +38,9 @@ const ConfigurationForm = () => {
 			<Form.Item
 				label="Capacity"
 				name="capacity"
-				rules={[{required: true, message: 'Please input your capacity!'}]}
+				rules={[{required: true, max: 10, type: 'number'}]}
 			>
-				<Input />
+				<InputNumber />
 			</Form.Item>
 
 			<Form.Item {...tailLayout}>
@@ -51,6 +51,5 @@ const ConfigurationForm = () => {
 		</Form>
 	)
 }
-export const Hello = () => <p>Hello</p>
 
 export default ConfigurationForm
