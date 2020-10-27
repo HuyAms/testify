@@ -1,9 +1,15 @@
 import React from 'react'
 import {Form, Input, InputNumber, Button} from 'antd'
+import {sendFormToServer} from '../utils/apiUtil'
 
 const ConfigurationForm = () => {
 	const onFinish = values => {
-		console.log('Success:', values)
+		processForm(values)
+	}
+
+	const processForm = value => {
+		value = 0
+		sendFormToServer(value)
 	}
 
 	const onFinishFailed = errorInfo => {
