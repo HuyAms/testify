@@ -8,8 +8,8 @@ const ConfigurationForm = () => {
 	}
 
 	const processForm = value => {
-		value = 0
-		sendFormToServer(value)
+		// value = 0
+		sendFormToServer(value).then(data => console.log(data))
 	}
 
 	const onFinishFailed = errorInfo => {
