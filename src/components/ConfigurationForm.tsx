@@ -13,7 +13,7 @@ const ConfigurationForm = () => {
 	}
 
 	const onFinishFailed = errorInfo => {
-		console.log('Failed:', errorInfo)
+		console.log('Failed to submit:', errorInfo)
 	}
 
 	const layout = {
