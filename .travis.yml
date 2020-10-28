@@ -5,4 +5,4 @@ cache:
 install:
   - npm install
 script:
-  - npm run test
+  - npm run test -- --coverage --watchAll=false
