@@ -38,7 +38,7 @@ describe('ConfigurationForm', () => {
 		// Arrange
 		;(mockedSendFormToServer as jest.Mock).mockResolvedValueOnce({
 			statusCode: 200,
-			message: 'Success sent data to server dm',
+			message: 'Success sent data to server',
 		})
 
 		const {getByText, getByLabelText} = render(<ConfigurationForm />)
